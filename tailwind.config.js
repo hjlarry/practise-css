@@ -13,6 +13,9 @@ module.exports = {
                     200: 'rgba(255,255,255, .2)',
                     100: 'rgba(255,255,255, .1)'
                 },
+                'black-alpha': {
+                    400: 'rgba(0,0,0,0.4)'
+                },
             }
         },
     },
@@ -22,6 +25,10 @@ module.exports = {
                 '.y-center': {
                     top: '50%',
                     transform: 'translateY(-50%)'
+                },
+                '.x-center': {
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 }
             }
             addUtilities(newUtilities)
