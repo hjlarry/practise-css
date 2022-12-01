@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./spotify/**/*.html"],
+    content: ["./spotify/**/*.html", "./netlify/**/*.html"],
     theme: {
         extend: {
             colors: {
@@ -16,6 +16,7 @@ module.exports = {
                 'black-alpha': {
                     400: 'rgba(0,0,0,0.4)'
                 },
+                "dark-ocean": '#161f27'
             }
         },
     },
