@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .bg-box {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        .bg-box-ani {
+            animation: background-change 2s;
+        }
+
+        @keyframes background-change {
+            0% {
+                background-color: gray;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: gray;
+            }
+        }
+
+        .move-box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 9999px;
+            position: relative;
+            /* 名字，为 @keyframes 的名字 */
+            animation-name: move-name;
+            /*  动画的时间 */
+            animation-duration: 5s;
+            /* 动画执行函数 */
+            animation-timing-function: ease-in-out;
+            /* 动画延迟时间 */
+            animation-delay: 1s;
+            /* 动画重复次数 */
+            animation-iteration-count: 10;
+            /* 动画的方向，先正向后逆向 */
+            animation-direction: alternate;
+            /* 动画执行后的填充模式 */
+            animation-fill-mode: backwards;
+            /* 动画的运行状态 */
+            animation-play-state: running;
+        }
+
+        @keyframes move-name {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .move-transition-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            transition-property: background-color, height, width;
+            transition-duration: 2s, 1.0s, 1.0s;
+            transition-delay: 0.1s;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-box bg-box-ani"></div>
+    <div class="move-box"></div>
+    <div class="move-transition-box" onclick="scale()"></div>
+</body>
+
+<script>
+    function scale() {
+        let tbox = document.querySelector('.move-transition-box');
+        tbox.style.width = '200px';
+        tbox.style.height = '200px';
+        tbox.style.backgroundColor = 'black';
+    }
+</script>
+
+</html>
