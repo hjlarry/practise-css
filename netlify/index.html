@@ -1,45 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Netlify</title>
     <link rel="stylesheet" href="o.css">
 </head>
-<body class="font-mono bg-gray-200">
-<header>
-    <div class="absolute pt-64 bg-dark-ocean top-0 left-0 w-full"></div>
-    <div class="flex items-center px-40 py-2 z-20 relative text-white text-gray-400">
-        <img src="logo.svg" alt="Netlify Logo" class="w-8">
-        <span class="ml-2">Asvny ></span>
-        <span class="ml-4 text-white">youthful-morse-7c172b.netlify.com</span>
-        <img src="chris.jpg" alt="Netlify Logo" class="w-8 ml-auto rounded-full">
+
+<body class="font-sans bg-gray-200">
+    <header>
+        <div class="absolute pt-64 bg-dark-ocean top-0 left-0 w-full"></div>
+        <div class="flex items-center px-40 py-4 z-20 relative text-gray-500 font-medium text-xl">
+            <img src="logo.svg" alt="Netlify Logo" class="w-10">
+            <span class="ml-8">Asvny ></span>
+            <span class="ml-4 text-white">youthful-morse-7c172b.netlify.com</span>
+            <img src="chris.jpg" alt="Netlify Logo" class="w-10 ml-auto rounded-full">
+        </div>
+        <nav class="flex space-x-6 mx-40 border-t-2 relative text-gray-500 font-medium py-4">
+            <a class="hover:text-white hover:cursor-pointer">Overview</a>
+            <a class="hover:text-white hover:cursor-pointer">Deploys</a>
+            <a class="hover:text-white hover:cursor-pointer">Functions</a>
+            <a class="hover:text-white hover:cursor-pointer">Identity</a>
+            <a class="hover:text-white hover:cursor-pointer">Forms</a>
+            <a class="hover:text-white hover:cursor-pointer">Split</a>
+            <a class="hover:text-white hover:cursor-pointer">Testing</a>
+            <a class="text-white">Settings</a>
+        </nav>
+    </header>
+    <div class="flex bg-white rounded-lg w-1/2 shadow-md relative mt-8 mx-40 p-6">
+        <div class="flex-1 flex-col space-y-2">
+            <h2 class="font-bold text-xl">Settings for elated-stonebraker-70896a</h2>
+            <a class="text-gray-600 border-b border-gray-400 inline-block mt-2">annamalai.me</a>
+            <p class="text-gray-600 text-sm">Deploys from GitHub. Owned by Asvny</p>
+            <p class="text-gray-600 text-sm">Last update on Jul 11 (2 days ago)</p>
+        </div>
+        <div class="ml-auto">
+            <img src="screenshot.png" alt="Netlify Logo" class="rounded h-32">
+        </div>
     </div>
-    <nav class="flex space-x-4 mx-40 border-t-2 relative text-gray-400 font-medium py-2">
-        <a class="hover:text-white hover:cursor-pointer">Overview</a>
-        <a class="hover:text-white hover:cursor-pointer">Deploys</a>
-        <a class="hover:text-white hover:cursor-pointer">Functions</a>
-        <a class="hover:text-white hover:cursor-pointer">Identity</a>
-        <a class="hover:text-white hover:cursor-pointer">Forms</a>
-        <a class="hover:text-white hover:cursor-pointer">Split</a>
-        <a class="hover:text-white hover:cursor-pointer">Testing</a>
-        <a class="text-white">Settings</a>
-    </nav>
-</header>
-<div class="flex bg-white rounded-2xl w-1/2 shadow-lg relative mt-16 mx-40 p-5">
-   <div class="flex flex-col space-y-2">
-       <span class="font-bold">Settings for elated-stonebraker-70896a</span>
-       <span class="text-gray-700 text-xs">annamalai.me</span>
-       <span class="text-gray-700 text-sm">Deploys from GitHub. Owned by Asvny</span>
-       <span class="text-gray-700 text-sm">Last update on Jul 11 (2 days ago)</span>
-   </div>
-    <div class="w-1/3 ml-auto">
-        <img src="screenshot.png" alt="Netlify Logo" class="rounded">
+    <div class="flex mx-40 mt-10">
+        <aside class="w-1/4 ">
+            <nav class=" flex flex-col border border-gray-400 bg-white rounded text-gray-600">
+                <div class="border-b border-gray-400 px-4 py-3 text-black font-bold relative"><span
+                        class="absolute w-1 h-full bg-green-400 left-0 top-0"></span>Gernal</div>
+                <div class="border-b border-gray-400 px-4 py-3 hover:bg-gray-100 hover:cursor-pointer">Site details
+                </div>
+                <div class="border-b border-gray-400 px-4 py-3 hover:bg-gray-100 hover:cursor-pointer">Site
+                    administrators
+                </div>
+                <div class="border-b border-gray-400 px-4 py-3 hover:bg-gray-100 hover:cursor-pointer">Danger zone</div>
+                <div class=" px-4 py-3 hover:bg-gray-100 hover:cursor-pointer">Functions</div>
+            </nav>
+        </aside>
+        <main class="flex-1 ml-10">
+            <h1 class="text-2xl font-semibold">Site Details</h1>
+            <span class="text-gray-600 leading-relaxed">General information about your site</span>
+            <div class="bg-white rounded-lg shadow mt-5 py-3">
+                <header class="text-xl font-semibold mx-6 mt-4 pb-2 border-b-2">Site Information</header>
+                <div class="table mt-6 text-gray-700 w-full">
+                    <div class="table-row ">
+                        <div class="table-cell px-6 py-2">Site name:</div>
+                        <div class="table-cell font-semibold text-black">youthful-morse-7c172b.netlify.com</div>
+                    </div>
+                    <div class="table-row bg-gray-100">
+                        <div class="table-cell px-6 py-2">Owner:</div>
+                        <div class="table-cell font-semibold text-black">
+                            <span class="bg-gray-300 px-2 py-1 rounded inline-flex items-center">Annamalai
+                                <svg class="h-4 w-4 ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="table-row ">
+                        <div class="table-cell px-6 py-2">Repository:</div>
+                        <div class="table-cell font-semibold text-black">
+                            github.com/asvny/building-real-user-interfaces-using-tailwind</div>
+                    </div>
+                    <div class="table-row bg-gray-100">
+                        <div class="table-cell px-6 py-2">API ID:</div>
+                        <div class="table-cell font-semibold text-black">42999d0e-b846-4039-bfb5-5b3a1cd68a3b</div>
+                    </div>
+                    <div class="table-row ">
+                        <div class="table-cell px-6 py-2">Created:</div>
+                        <div class="table-cell font-semibold text-black">Mar 4 at 1:14 PM</div>
+                    </div>
+                    <div class="table-row bg-gray-100">
+                        <div class="table-cell px-6 py-2">Last update:</div>
+                        <div class="table-cell font-semibold text-black">Jul 11 at 4:00 PM</div>
+                    </div>
+                </div>
+                <footer class="mx-6 mt-6">
+                    <button class="border rounded px-3 py-2 text-gray-700 shadow font-semibold">Change site
+                        name</button>
+                </footer>
+            </div>
+
+            <div class="bg-white rounded-lg shadow mt-8 py-3">
+                <header class="text-xl font-semibold mx-6 mt-3 pb-2 border-b-2">Add-ons</header>
+                <div class="mx-6 my-3">
+                    <h3 class="mt-6 font-semibold">This site is not using any add-ons</h3>
+                    <p class="my-3">Take your static site further with rich add-ons built right into
+                        your dashboard.Automatically upgrade tiers as your usage grows, paying only for what you use.
+                    </p>
+                    <div class="mt-4 mb-6 font-semibold text-teal-600 hover:cursor-pointer">Learn more about pricing
+                        and
+                        usage
+                        <svg class="inline-block h-3 w-3 ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M16.172 9l-6.071-6.071 1.414-1.414L20 10l-.707.707-7.778 7.778-1.414-1.414L16.172 11H0V9z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-2xl font-semibold mt-12">Site administrators</h1>
+            <p class="text-gray-600">Collaborate with others on this site</p>
+            <div class="bg-white rounded-lg shadow mt-3 py-3">
+                <div class="mx-6 my-3">
+                    <h3 class="my-3 mt-4 font-semibold text-2xl">Team collaboration</h3>
+                    <p class="text-gray-600">Transfer your site to a team to activate collaboration features
+                        like multi-level administrator roles and visitor access control.
+                    </p>
+                    <div class="mt-4 font-semibold text-teal-600 hover:cursor-pointer">
+                        Learn more about our pricing
+                        <svg class="inline-block h-3 w-3 ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M16.172 9l-6.071-6.071 1.414-1.414L20 10l-.707.707-7.778 7.778-1.414-1.414L16.172 11H0V9z">
+                            </path>
+                        </svg>
+                    </div>
+                    <button class="border rounded mt-4 px-4 py-2 bg-teal-500 text-white shadow font-semibold">Transfer
+                        site
+                        to a new
+                        team</button>
+                </div>
+            </div>
+
+            <h1 class="text-2xl font-semibold mt-12">Danger zone</h1>
+            <p class="text-gray-600">Irreversible and destructive actions. Tread lightly.</p>
+            <div class="bg-white rounded-lg shadow mt-3 py-3">
+                <header class="text-2xl font-semibold mx-6 mt-3 pb-2 border-b-2">Delete site</header>
+                <div class="mx-6 my-3">
+                    <p class="text-gray-600">Once you delete a site, there is no going back.
+                    </p>
+                    <button class="border rounded mt-4 px-4 py-2 bg-red-500 text-white shadow font-semibold">Delete this
+                        site
+                    </button>
+                </div>
+            </div>
+        </main>
     </div>
-</div>
-<div>
-    <aside></aside>
-    <main></main>
-</div>
-<footer></footer>
+    <footer class="bg-dark-ocean flex flex-col mt-6 py-12 space-y-2">
+        <div class="mx-40 flex space-x-6 text-gray-500">
+            <a class="hover:text-white hover:cursor-pointer">Docs</a>
+            <a class="hover:text-white hover:cursor-pointer">Pricing</a>
+            <a class="hover:text-white hover:cursor-pointer">Support</a>
+            <a class="hover:text-white hover:cursor-pointer">News</a>
+            <a class="hover:text-white hover:cursor-pointer">Terms</a>
+        </div>
+        <div class="mx-40 text-sm text-gray-600">© 2018 Netlify</div>
+    </footer>
 </body>
+
 </html>
