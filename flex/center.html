@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CENTER</title>
+    <style>
+        .parent {
+            background: green;
+        }
+
+        .child {
+            background: red;
+        }
+
+        .high1 {
+            height: 100px;
+        }
+
+        .high2 {
+            height: 50px;
+        }
+
+        .parent1 {
+            /* text-align会对inline的子级生效，设置为center就会水平居中 */
+            text-align: center;
+        }
+
+        .child1 {
+            /* display设置为inline-block子级就不会撑满父级，而是自适应内容 */
+            display: inline-block;
+            /* text-align会继承，child的子级也会水平居中，如果我们想恢复默认，手动写为左对齐就行了 */
+            text-align: left;
+        }
+
+        .child2 {
+            display: table;
+            /*
+            如果不知道child的width,则需要设定display为table，margin auto才能生效 
+            如果已经知道child的width, margin auto直接就可以生效 
+            */
+            margin: 0 auto;
+        }
+
+        .parent3 {
+            /* 父级设置relative好让子级absolute相对于父级定位 */
+            position: relative;
+        }
+
+        .child3 {
+            position: absolute;
+            /* left 50%会让子级在正中稍微靠右一点 */
+            left: 50%;
+            /* translateX百分比相对的是自身，因为前面靠右了，往左挪一点, 挪的位置刚好是自身宽的一半 */
+            transform: translate(-50%);
+        }
+
+        .parent4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .parent5 {
+            display: flex;
+        }
+
+        .child5 {
+            margin: 0 auto;
+        }
+
+        .parent6 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .parent7 {
+            position: relative;
+        }
+
+        .child7 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .parent8 {
+            display: flex;
+            align-items: center;
+        }
+
+        .parent9 {
+            width: 500px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .child9 {
+            display: inline-block;
+        }
+
+        .parent10 {
+            position: relative;
+        }
+
+        .child10 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .parent11 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent parent1">
+        <div class="child child1">
+            水平居中DEMO
+        </div>
+    </div>
+    <div class="parent parent2">
+        <div class="child child2">
+            水平居中DEMO
+        </div>
+    </div>
+    <div class="parent parent3">
+        <div class="child child3">
+            水平居中DEMO
+        </div>
+    </div>
+    <div class="parent parent4" style="margin-top: 50px;">
+        <div class="child child4">
+            水平居中DEMO
+        </div>
+    </div>
+    <div class="parent parent5">
+        <div class="child child5">
+            水平居中DEMO
+        </div>
+    </div>
+
+    <div class="parent high1 parent6">
+        <div class="child high2 child6">
+            垂直居中DEMO
+        </div>
+    </div>
+
+    <div class="parent high1 parent7">
+        <div class="child high2 child7">
+            垂直居中DEMO
+        </div>
+    </div>
+
+    <div class="parent high1 parent8">
+        <div class="child high2 child8">
+            垂直居中DEMO
+        </div>
+    </div>
+
+    <div class="parent high1 parent9">
+        <div class="child high2 child9">
+            水平垂直居中DEMO
+        </div>
+    </div>
+    <div class="parent high1 parent10">
+        <div class="child high2 child10">
+            水平垂直居中DEMO
+        </div>
+    </div>
+    <div class="parent high1 parent11">
+        <div class="child high2 child11">
+            水平垂直居中DEMO
+        </div>
+    </div>
+</body>
+
+</html>
