@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url(./img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -25%;
+}
+
+.ham {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ham-top,
+.ham-middle,
+.ham-bottom {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ham-middle {
+    transform: translateY(7px);
+}
+
+.ham-bottom {
+    transform: translateY(14px);
+}
