@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./spotify/**/*.html", "./netlify/**/*.html"],
+    content: ["./spotify/**/*.html", "./netlify/**/*.html", "./landing/**/*.html"],
     theme: {
         extend: {
             colors: {

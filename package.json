@@ -6,6 +6,7 @@
   },
   "scripts": {
     "dev1": "npx tailwindcss -i ./spotify/main.css -o ./spotify/o.css --watch",
-    "dev2": "npx tailwindcss -i ./netlify/main.css -o ./netlify/o.css --watch"
+    "dev2": "npx tailwindcss -i ./netlify/main.css -o ./netlify/o.css --watch",
+    "dev3": "npx tailwindcss -i ./landing/main.css -o ./landing/o.css --watch"
   }
 }
