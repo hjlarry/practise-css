@@ -25,7 +25,7 @@
                 <button
                     class="hidden bg-red-500 hover:bg-red-300 text-white self-baseline rounded-full px-6 pt-2 pb-3 md:block">Get
                     Started</button>
-                <button class="ham block md:hidden" title="1">
+                <button id="ham" class="ham block md:hidden">
                     <span class="ham-top"></span>
                     <span class="ham-middle"></span>
                     <span class="ham-bottom"></span>
@@ -34,7 +34,14 @@
         </div>
 
         <!-- Hide mobile menu -->
-        <div></div>
+        <div id="mobile_menu"
+            class="bg-white shadow-lg flex flex-col items-center space-y-6 py-6 mt-10 font-bold hidden">
+            <a href="#" class="hover:text-gray-400">Pricing</a>
+            <a href="#" class="hover:text-gray-400">Product</a>
+            <a href="#" class="hover:text-gray-400">About Us</a>
+            <a href="#" class="hover:text-gray-400">Careers</a>
+            <a href="#" class="hover:text-gray-400">Community</a>
+        </div>
     </nav>
     <section class="container mx-auto flex flex-col px-6 mt-10 md:flex-row-reverse md:items-center">
         <div class="md:w-1/2">
@@ -167,7 +174,7 @@
         <button class="mx-auto bg-red-500 hover:bg-red-300 text-white self-baseline rounded-full px-6 pt-2 pb-3">Get
             Started</button>
     </section>
-    <section id="cta" class="container mt-32 bg-red-300">
+    <section id="cta" class="container mt-32">
         <div class="flex flex-col text-center space-y-12 p-12 md:flex-row md:text-left md:space-y-0 md:items-center">
             <h1 class="font-bold max-w-2xl text-5xl text-white">Simplify how your team works today</h1>
             <button class="mx-auto bg-white hover:bg-slate-800 text-red-500 rounded-full px-6 pt-2 pb-3 md:mr-0">Get
@@ -225,5 +232,15 @@
         </div>
     </footer>
 </body>
+
+<script>
+    let ham = document.getElementById('ham');
+    let mobile_menu = document.getElementById('mobile_menu');
+    ham.addEventListener('click', () => {
+        mobile_menu.classList.toggle('hidden');
+        ham.classList.toggle('open');
+    })
+</script>
+
 
 </html>
