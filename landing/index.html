@@ -174,7 +174,56 @@
                 Started</button>
         </div>
     </section>
-    <footer></footer>
+    <footer
+        class="container flex flex-col-reverse justify-between bg-slate-800 space-y-8 px-6 py-10 md:flex-row md:space-y-0">
+        <!-- Logo container -->
+        <div
+            class="flex flex-col space-y-12 mt-12 justify-between md:flex-col-reverse md:mt-0 md:space-y-0 md:items-start">
+            <div class="flex justify-center space-x-4">
+                <img src="./img/icon-facebook.svg" alt="icon-facebook" class="h-8" />
+                <img src="./img/icon-pinterest.svg" alt="icon-pinterest" class="h-8" />
+                <img src="./img/icon-instagram.svg" alt="icon-instagram" class="h-8" />
+                <img src="./img/icon-twitter.svg" alt="icon-twitter" class="h-8" />
+                <img src="./img/icon-youtube.svg" alt="icon-youtube" class="h-8" />
+            </div>
+            <div class="flex justify-center">
+                <img src="./img/logo-white.svg" alt="logo" class="h-8" />
+            </div>
+            <p class="text-white text-center md:hidden">
+                © 2021 Manage. All rights reserved
+            </p>
+        </div>
+        <!-- List container -->
+
+        <div class="flex text-white justify-around space-x-32">
+            <div class="flex flex-col space-y-3">
+                <a href="#" class="hover:text-red-300">Home</a>
+                <a href="#" class="hover:text-red-300">Pricing</a>
+                <a href="#" class="hover:text-red-300">Products</a>
+                <a href="#" class="hover:text-red-300">About</a>
+            </div>
+            <div class="flex flex-col space-y-3 ml-auto">
+                <a href="#" class="hover:text-red-300">Careers</a>
+                <a href="#" class="hover:text-red-300">Community</a>
+                <a href="#" class="hover:text-red-300">Private Privacy</a>
+            </div>
+        </div>
+
+        <!-- Input container -->
+        <div class="flex flex-col justify-between">
+            <form class="flex space-x-3 ">
+                <input type="text" placeholder="Updated in your box"
+                    class="rounded-full px-4 py-2 flex-1 focus:outline-none" />
+                <button
+                    class="bg-red-500 hover:bg-red-300 text-white self-baseline rounded-full px-6 pt-2 pb-3">Go</button>
+            </form>
+            <div>
+                <p class="text-white text-center hidden md:block">
+                    © 2021 Manage. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
